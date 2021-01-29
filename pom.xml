@@ -7,12 +7,29 @@
 	<parent>
 		<groupId>com.example</groupId>
 		<artifactId>demo-spring-brewery-bom</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>1.0.0</version>
 	</parent>
 
 	<artifactId>demo-spring-brewery-starter</artifactId>
 
 	<name>demo-spring-brewery-starter</name>
 	<description>demo-spring-brewery-starter</description>
+	
+	<repositories>
+		<repository>
+			<id>demo-spring-brewery-bom-mvn-repo</id>
+			<name>demo-spring-brewery-bom-mvn-repo</name>
+			<url>https://raw.githubusercontent.com/sakanasan20/demo-spring-brewery-bom/master/mvn-repo</url>
+			<releases>
+				<enabled>true</enabled>
+				<checksumPolicy>warn</checksumPolicy>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+				<checksumPolicy>warn</checksumPolicy>
+			</snapshots>
+		</repository>
+	</repositories>
 
 </project>
